@@ -1,0 +1,580 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+nav {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+nav .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: center;
+}
+
+nav .navbar-container .nav-left{
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar-container .nav-left a{
+    text-decoration: none;
+}
+
+nav .navbar-container .nav-left h1 {
+    margin: 0;
+    margin-right: 1.75rem;
+    color: #064635;
+}
+
+nav .navbar-container .nav-left span {
+    color: #019267;
+}
+
+nav .navbar-container .nav-left ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav .navbar-container .nav-left ul li{
+    margin-right: 3rem;
+    font-weight: 500;
+    color: #3d3d3d;
+    cursor: pointer;
+}
+
+nav .navbar-container .nav-left ul li:hover{
+    text-decoration: solid;
+    color: #d3d3d3;
+}
+
+nav .navbar-container .nav-right a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .navbar-container .nav-right p {
+    padding: .5rem 1.5rem;
+    background-color: #064635;
+    font-size: .75rem;
+    font-weight:500;
+    border-radius: 0.75rem;
+}
+
+
+
+
+
+/* section maincontent */
+.section-content {
+    display: flex;
+    padding: 2rem 4rem;
+    margin: 0;
+    align-items: center;
+}
+
+.section-content .section-container {
+    display: flex;
+    align-items: center;
+}
+
+.section-content .section-container .section-left{
+    flex: 60%;
+    padding-left: 4rem;
+}
+
+.section-content .section-container .section-left h1{
+    margin: 0;
+    color: #064635
+}
+
+.section-content .section-container .section-left span{
+    margin: 0;
+    color: #FFCC1D;
+}
+
+.section-content .section-container .section-left .h2 {
+    margin-top: -0.5rem;
+}
+
+.section-content .section-container .section-left .description-head {
+    text-align: justify;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.section-content .section-container .section-left .section-contact {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.section-content .section-container .section-left .section-contact p{
+    margin: 0;
+}
+
+.section-content .section-container .section-left .section-contact a{
+    text-decoration: none;
+}
+
+.section-content .section-container .section-left .section-contact .contact-button {
+    padding: .5rem 2rem;
+    color: white;
+    background-color: #064635;
+    margin-right: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.section-content .section-container .section-left .section-contact .download-cv {
+    color: #064635;
+}
+
+.section-content .section-container .section-left a {
+    text-decoration: none;
+}
+
+.section-content .section-container .section-left .section-sosmed {
+    display: flex;
+    margin-top: 1.25rem;
+}
+
+.section-content .section-container .section-left .section-sosmed .sosmed-wrapper {
+    display: flex;
+    border: 2px solid #064635;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    color: #064635;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content .section-container .section-left .sosmed-wrapper:hover {
+    background-color: #064635;
+    color: white;
+}
+
+.section-content .section-container .section-right{
+    flex: 40%;
+}
+
+.section-content .section-container .section-right .card {
+    margin: auto ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 1rem;
+}
+
+.section-content .section-container .section-right .card .card-image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.section-content .section-container .section-right .card .card-image img{
+    width: 100%;
+    height: 350px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.section-content .section-container .section-right .card .card-name {
+    padding: .75rem 0;
+}
+
+
+.section-content .section-container .section-right .card .card-name h3 {
+    margin: 0;
+}
+
+.section-content .section-container .section-right .card .card-name p {
+    margin: 0;
+}
+
+
+
+
+
+/* /////////// CONTACT-ME /////////// */
+.form-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.form-contact .form-contact-container{
+    margin-top: 1rem;
+    padding: 1rem;
+    height: 400px;
+    width: 400px;
+}
+
+.form-contact .form-contact-container h2 {
+    margin: 0;
+    color: #064635;
+    text-align: center;
+}
+
+.form-contact .form-contact-container .input-text-wrapper {
+    margin-top: .5rem;
+}
+
+.form-contact .form-contact-container .input-text-wrapper input {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #d3d3d3;
+    border-radius: .5rem;
+    box-sizing: border-box;
+}
+
+.form-contact .form-contact-container .input-text-wrapper select{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #d3d3d3;
+    border-radius: .5rem;
+}
+
+.form-contact .form-contact-container .input-text-wrapper textarea {
+    width: 100%;
+    padding: .5rem;
+    height: 100px;
+    border: 1px solid #d3d3d3;
+    border-radius: .5rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.form-contact .form-contact-container .input-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.125rem;
+}
+
+.form-contact .form-contact-container .input-button-wrapper button {
+    cursor: pointer;
+    padding: .5rem 2rem;
+    background-color: #064635;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+
+
+
+/* /////////// PROJECT /////////// */
+.content-add-project {
+    display: flex;
+    justify-content: center;
+}
+
+.content-add-project .add-project-container {
+    width: 400px;
+    padding: 1rem;
+}
+
+.content-add-project .add-project-container .title-form-project {
+    margin: 0;
+    text-align: center;
+}
+
+.content-add-project .add-project-container .add-project-wrapper {
+    margin-top: .75rem;
+}
+
+.content-add-project .add-project-container .adddate-project-wrapper {
+    margin-top: .75rem;
+}
+
+.content-add-project .add-project-container .add-project-wrapper label{
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: .5rem;
+}
+
+.content-add-project .add-project-container .add-project-wrapper  input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.content-add-project .add-project-container .add-project-wrapper  textarea{
+    width: 100%;
+    resize: none;
+    height: 200px;
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.content-add-project .add-project-container .adddate-project-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-add-project .add-project-container .adddate-project-wrapper label{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.content-add-project .add-project-container .adddate-project-wrapper input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.content-add-project .add-project-container .adddate-project-wrapper .startdate {
+    margin-right: .5rem;
+}
+
+.content-add-project .add-project-container .add-project-wrapper .checkbox-project-wrapper {
+    display: flex;
+}
+
+.content-add-project .add-project-container .add-project-wrapper .checkbox-project-wrapper .checkbox-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+.content-add-project .add-project-container .add-project-wrapper .checkbox-project-wrapper .checkbox-left .checkbox-item  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-add-project .add-project-container .add-project-wrapper .checkbox-project-wrapper .checkbox-left .checkbox-item input {
+    width: auto;
+}
+
+.content-add-project .add-project-container .add-project-wrapper .checkbox-project-wrapper .checkbox-left .checkbox-item label {
+    font-size: 1rem;
+}
+
+.content-add-project .add-project-container .button-add-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.content-add-project .add-project-container .button-add-wrapper button{
+    background-color: #064635;
+    color: white;
+    border: none;
+    padding: .5rem 1.75rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+/* /////////// POST PROJECT /////////// */
+.content-post-project {
+    display: flex;
+}
+
+.content-post-project .post-project-container {
+    /* padding: 0 4rem; */
+    width: 100%;
+}
+
+.content-post-project .post-project-container h3{
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.content-post-project .post-project-container .line{
+    width: 400px;
+    height: 2px;
+    border: none;
+    background-color: #064635;
+}
+
+.content-post-project .post-project-container .card-post-project {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 77.5%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 0 1rem;
+    margin-top: 3rem;
+    box-shadow: 2px 8px 10px rgba(0 0 0 / 0.2);
+    border: 1px solid #d3d3d3;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .image-project img{
+    border-radius: 16px;
+    width: 100%;
+    height: 200px;
+
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post h5{
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post p{
+    margin: 0;
+    text-align: justify;
+    font-size: .875rem;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post .durasipost{
+    color: #d3d3d3;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post .descpost{
+    margin-top: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post .icon-post{
+    display: flex;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post .icon-post .icon-post-item{
+    margin-right: 1rem;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .content-post .icon-post .icon-post-item i{
+    font-size: 1.5rem;
+    color: #d3d3d3;
+}
+
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .post-action {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .post-action a {
+    text-decoration: none;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .post-action p {
+    padding: .5rem 2rem;
+    margin: 0;
+    margin-right: .25rem;
+}
+
+.content-post-project .post-project-container .card-post-project .card-wrapper .post-action .editPost {
+    background-color: #064635;
+    color: white;
+    border-radius: 1rem;
+}
+
+.content-post-project .post-project-container .card-post-project .post-action .deletePost {
+    color: #064635;
+    border-radius: 1rem;
+    border: 1px solid #064635;
+}
+
+
+
+
+
+/* /////////// DETAIL BLOG /////////// */
+.detailBlog {
+    display: flex;
+}
+
+.detailBlog .detailBlogContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.detailBlog .detailBlogContainer h1 {
+    text-align: center;
+    color: #064635;
+}
+
+.detailBlog .detailBlogContainer .topContent {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.detailBlog .detailBlogContainer .topContent .imgContainer {
+    width: 50%;
+    margin-right: 24px;
+}
+
+.detailBlog .detailBlogContainer .topContent .imgContainer img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.detailBlog .detailBlogContainer .topContent .detailContainer {
+    width: 25%;
+}
+
+.detailBlog .detailBlogContainer .topContent .detailContainer h4 {
+    margin: 0;
+    margin-bottom: .875rem;
+}
+
+.detailBlog .detailBlogContainer .topContent .detailContainer p {
+    margin: 0;
+    margin-bottom: .875rem;
+    color: #d3d3d3;
+    font-weight: 500;
+}
+
+.detailBlog .detailBlogContainer .topContent .detailContainer i{
+    margin-right: .25rem;
+    color: #3d3d3d;
+    font-size: 1.25rem;
+}
+
+.detailBlog .detailBlogContainer .topContent .detailContainer .detailTechno {
+    margin-top: 2rem;
+}
+
+.detailBlog .detailBlogContainer .topContent .detailContainer .detailTechno .textItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailBlog .detailBlogContainer .detailDesc {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>eltech</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="nav-left">
+                <a href="index.html">
+                    <h1>Elt<span>ech</span></h1>
+                </a>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="project.html">
+                        <li>Project</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact-me.html">
+                    <p>Contact Me</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content-add-project -->
+    <div class="content-add-project">
+        <div class="add-project-container">
+            <h2 class="title-form-project">Create New Project</h2>
+
+            <form>
+                <div class="add-project-wrapper">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name" />
+                </div>
+
+                <div class="adddate-project-wrapper">
+                    <div class="startdate">
+                        <label for="start-date">Start Date</label>
+                        <input type="date" id="start-date" name="trip-start" min="2000-01-01">
+                    </div>
+                    <div class="enddate">
+                        <label for="end-date">End Date</label>
+                        <input type="date" id="end-date" name="trip-start">
+                    </div>
+                </div>
+
+                <div class="add-project-wrapper">
+                    <label for="project-description">Description</label>
+                    <textarea id="project-description"></textarea>
+                </div>
+
+                <div class="add-project-wrapper">
+                    <label for="checkbox-add">Technologies</label>
+                    <div class="checkbox-project-wrapper">
+                        <div class="checkbox-left">
+                            <div class="checkbox-item">
+                                <input type="checkbox" class="checkboxitem" id="node-js" value="fa-brands fa-node-js">
+                                <label for="node-js">Node.JS</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" class="checkboxitem" id="react-js" value="fa-brands fa-react">
+                                <label for="react-js">React.JS</label>
+                            </div>
+                        </div>
+                        <div class="checkbox-left">
+                            <div class="checkbox-item">
+                                <input type="checkbox" class="checkboxitem" id="golang" value="fa-brands fa-golang">
+                                <label for="golang">Golang</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" class="checkboxitem" id="python" value="fa-brands fa-python">
+                                <label for="python">Python</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-project-wrapper">
+                    <label for="add-image-project">Upload Image</label>
+                    <input type="file" id="add-image-project">
+                </div>
+
+                <div class="button-add-wrapper">
+                    <button type="button" onclick="addProject()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="content-post-project">
+        <div class="post-project-container">
+            <h3>My Project</h3>
+            <hr class="line">
+            <div class="card-post-project" id="contents">
+                <div class="card-wrapper">
+                    <div class="image-project">
+                        <img src="assets/img/image2.jpg" alt="imgpost" />
+                    </div>
+                    <div class="content-post">
+                        <h5>Ini sample project</h5>
+                        <p class="durasipost">1 Jan 2022</p>
+                        <p class="descpost">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam labore
+                            explicabo dolorem minima ipsam. Laboriosam quas eaque ab nostrum, iure dignissimos! Deleniti
+                            magnam quidem in fugit, et excepturi est id ab incidunt velit provident molestias nisi
+                            molestiae ipsum assumenda error rem asperiores quasi iste omnis facere sapiente. Autem nisi
+                            nihil dicta? Neque non, ipsum asperiores aperiam velit quod commodi nostrum placeat mollitia
+                            excepturi! Saepe quos sed aliquid ipsa autem doloremque, expedita facere dignissimos id
+                            dicta exercitationem quae! Repellendus voluptate sed earum, cum maiores saepe atque
+                            similique exercitationem est aperiam ipsa optio repellat harum natus doloremque quis illo
+                            quo corrupti adipisci.</p>
+                        <div class="icon-post">
+                            <div class="icon-post-item">
+                                <i class="fa-brands fa-node-js"></i>
+                            </div>
+
+                            <div class="icon-post-item">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+
+                            <div class="icon-post-item">
+                                <i class="fa-brands fa-golang"></i>
+                            </div>
+
+                            <div class="icon-post-item">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div style="font-size: .75rem; margin-top:.25rem; color:grey;">
+                        1 Hours Ago
+                    </div> -->
+
+                    <div class="post-action">
+                        <a href="#">
+                            <p class="editPost">Edit</p>
+                        </a>
+                        <a href="#">
+                            <p class="deletePost">Delete</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/blog.js"></script>
+
+</html>

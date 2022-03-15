@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Eltech</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="nav-left">
+                <a href="index.html">
+                    <h1>Elt<span>ech</span></h1>
+                </a>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="project.html">
+                        <li>Project</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact-me.html">
+                    <p>Contact Me</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form contact -->
+    <div class="form-contact">
+        <div class="form-contact-container">
+            <h2>
+                GET IN TOUCH WITH US
+            </h2>
+            <form>
+                <div class="input-text-wrapper">
+                    <label for="input-name">Name</label>
+                    <input type="text" id="input-name" />
+                </div>
+                <div class="input-text-wrapper">
+                    <label for="input-email">Email</label>
+                    <input type="text" id="input-email" />
+                </div>
+                <div class="input-text-wrapper">
+                    <label for="input-telp">Telphone</label>
+                    <input type="text" id="input-telp" />
+                </div>
+                <div class="input-text-wrapper">
+                    <label for="input-subject">Subject</label>
+                    <select id="input-subject">
+                        <option hidden></option>
+                        <option>I'm Hiring</option>
+                        <option>Let's Collaboration</option>
+                        <option>Let's Talk</option>
+                    </select>
+                </div>
+                <div class="input-text-wrapper">
+                    <label for="input-message">Your Message</label>
+                    <textarea id="input-message"></textarea>
+                </div>
+                <div class="input-button-wrapper">
+                    <button type="button" onclick="submitForm()">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/contactMe.js"></script>
+
+</html>
